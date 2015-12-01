@@ -1,1 +1,5 @@
 django==1.8.6
+lxml
+feedreader
+Werkzeug
+django-extensions
