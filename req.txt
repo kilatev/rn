@@ -1,5 +1,6 @@
-django==1.8.6
+django>=1.9
 lxml
 feedreader
 Werkzeug
 django-extensions
+ipython
