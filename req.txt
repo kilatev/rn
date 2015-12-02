@@ -4,3 +4,4 @@ feedreader
 Werkzeug
 django-extensions
 ipython
+restless
