@@ -5,3 +5,5 @@ Werkzeug
 django-extensions
 ipython
 restless
+factory_boy
+fake-factory
