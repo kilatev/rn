@@ -103,3 +103,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '.'
+
+
+RSS_URLS = {
+    'lv': 'https://www.riga.lv/rss/lv/news/',
+    'ru': 'https://www.riga.lv/rss/ru/news/',
+    'en': 'https://www.riga.lv/rss/en/news/',
+}
