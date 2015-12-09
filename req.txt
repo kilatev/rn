@@ -1,6 +1,6 @@
 django>=1.9
 lxml
-feedreader
+feedparser
 Werkzeug
 django-extensions
 ipython

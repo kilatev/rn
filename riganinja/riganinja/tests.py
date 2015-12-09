@@ -23,6 +23,15 @@ class RSSToolsTestCase(TestCase):
     def test_get_parsed_results(self):
         self.assertTrue(self.rss_tools.get_parsed_results())
 
+    def test_parsed_to_model(self):
+        res = self.rss_tools.parsed_to_model()
+        self.assertTrue(res)
+
+    def test_create_channel(self):
+        parsed = self.rss_tools.get_parsed_results()
+        channel = self.rss_tools.create_channel(parsed)
+        self.assertTrue(channel)
+
 
 class ItemTestCase(TestCase):
     def setUp(self):
@@ -33,7 +42,6 @@ class ItemTestCase(TestCase):
         for item in items:
             item.channel.save()
             item.save()
-
 
     def test_list_items(self):
         url = reverse('api_item_list')
