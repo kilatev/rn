@@ -24,8 +24,11 @@ class RSSToolsTestCase(TestCase):
         self.assertTrue(self.rss_tools.get_parsed_results())
 
     def test_parsed_to_model(self):
-        res = self.rss_tools.parsed_to_model()
-        self.assertTrue(res)
+        pre_count = Item.objects.count()
+        parsed = self.rss_tools.get_parsed_results()
+        res = self.rss_tools.parsed_to_model(parsed)
+        post_count = Item.objects.count()
+        self.assertNotEqual(pre_count, post_count)
 
     def test_create_channel(self):
         parsed = self.rss_tools.get_parsed_results()
