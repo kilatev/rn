@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'riganinja',
     'django_extensions',
+    'django_crontab',
 )
 
 MIDDLEWARE_CLASSES = (

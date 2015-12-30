@@ -8,3 +8,4 @@ restless
 factory_boy
 fake-factory
 python-dateutil
+django-crontab
